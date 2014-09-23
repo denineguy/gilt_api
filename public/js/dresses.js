@@ -3,7 +3,6 @@ $(document).ready(function(){
   // $('#products, h6').hide();
   var apikey = 'df180f455f59f4441b26c77d27a8727e',
       URL = 'https://api.gilt.com/v1/products?q=shoes&store=women&size=WoSh%3A8&apikey=df180f455f59f4441b26c77d27a8727e';
-       // URL = 'https://api.gilt.com/v1/sales/women/active.json?apikey=df180f455f59f4441b26c77d27a8727e';
   $.ajax({
     url: URL,
     type: 'GET',
@@ -15,36 +14,28 @@ $(document).ready(function(){
         var product_name = response.products[i].name;
         var brand_name = response.products[i].brand;
         var product_url = response.products[i].url;
-        var product = response.products[i].skus;
+        var product = response.products[i].skus
 
         for (var j = 0; j < product.length; j++){
           var product_msrp = product[j].msrp_price;
           var product_price = product[j].sale_price;
-          var color_object = product[j].attributes;
-
+          var color_object = product[j].attributes
+          
           for (var k = 0; k < color_object.length; k++){
             var name = color_object[0].name;
             var color = color_object[0].value;
           }
-
-        }  
-        // var images = response.products[i].images_urls; 
-        for (var key in response.products[i].image_urls) {
-          var image_object = response.products[i].image_urls[key];
+        // var image = response.products[i].images_url; 
+           
         }
-
-        for (var key2 in image_object) {
-          var image = image_object[key2].url;
-        }
-        
  
-        $('.products-container').append("<div class='image-container'><li><a href=" + product_url + "'target='_blank'><div class='sale_info' style='background-image:url(\"" + image + "\");background-size:cover'>Hello</div></a></li></div>" +
-                              "<div class='product-info'><h3>" + product_name + "</h3>" + 
+        $('#products').append("<li><a href='" + product_url + "'target='_blank'>" +
+                              "<h3>" + product_name + "</h3></a></li>" + 
                               "<li>"+ brand_name +"</li>" +
                               "<li>" + name+ ": " + color + "</li>" +
                               "<li>" + product_price + "</li>" +
-                              "<li><s>" + product_msrp + "</s></li></div>");
-        $('.products-container, h6').fadeIn(3000);
+                              "<li><s>" + product_msrp + "</s></li>");
+        $('#products, h6').fadeIn(3000);
 
       }
   
@@ -55,7 +46,6 @@ $(document).ready(function(){
   }); 
 });
 
- // $('#products').append("<li><a href='" + sale_url + "'target='_blank'><div class='sale_info' style='background-image:url(\"" + image + "\"); background-size:cover'><h1>" + sale_name + "</h1></div></a></li>");
 
 // {products":[
 // {"name":"Mixed Media T-Strap Platform Sandal",

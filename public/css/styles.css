@@ -1,0 +1,24 @@
+.image-container{
+  height: 300px;
+}
+
+.image-container li img{
+  height: 121px;
+}
+.products{
+  width: 30%;
+  border: 1px solid black;
+  float: left;
+}
+
+.products ul li{
+  list-style: none;
+}
+
+li{
+  border: 1px solid blue;
+}
+
+.sale_info{
+  height: 300px;
+}
