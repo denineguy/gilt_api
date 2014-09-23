@@ -1,8 +1,37 @@
 <%#= erb :'layouts/_header' %>
-<html lang="en">
-  <%= erb :'layouts/_header' %>
+<!-- <html lang="en">
+  <%#= erb :'layouts/_header' %>
       <div>
 
     </div><!-- Container Section -->
-  </body>
+  <!-- </body> -->
+<!-- </html> --> 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8>
+  <meta name="keywords" content="fashion"/>
+  <meta name="description" content="My Shopping Obsession.">
+  <title>My Shopping Obsession</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <!-- <link rel="icon" type="image/jpg" href="favicon.jpg" /> -->
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/shoes.js"></script>
+  <script src="js/dresses.js"></script>
+</head>
+<body>
+  <nav>
+    <h3>My Shopping Obsession</h3>
+    <h5>Curated Product from Gilt Fit Just for You</h5>
+  </nav>
+  <div class="products">
+    <ul id="products"></ul>
+  </div>
+  <footer>
+    <h6>Built by <a href="http://twitter.com/sashaydoll" target="_blank">Denine Guy</a> using the Gilt Groupe API</h6>
+    <h6>(no affiliation with <a href="http://gilt.com" target="_blank">Gilt Groupe</a>)</h6>
+  </footer>
+</body>
 </html>
