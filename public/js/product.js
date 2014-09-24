@@ -1,9 +1,9 @@
-$(document).ready(function(){
+// $(document).ready(function(){
 
-$('.buy-container').hide();
+// $('.buy-container').hide();
 
   
-      $('.container').hover(function(){
-        $(this).find('.buy-container').slideToggle("slow");
-      });
-});
+//       $('.container').hover(function(){
+//         $(this).find('.buy-container').slideToggle("slow");
+//       });
+// });

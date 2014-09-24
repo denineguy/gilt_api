@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   // $('#products, h6').hide();
   var apikey = 'df180f455f59f4441b26c77d27a8727e',
-      URL = 'https://api.gilt.com/v1/products?q=shoes&store=women&size=WoSh%3A8&apikey=df180f455f59f4441b26c77d27a8727e';
+      URL = 'https://api.gilt.com/v1/products?q=shoes&store=women&size=WoSh%3A9.5&apikey=df180f455f59f4441b26c77d27a8727e';
        // URL = 'https://api.gilt.com/v1/sales/women/active.json?apikey=df180f455f59f4441b26c77d27a8727e';
   $.ajax({
     url: URL,
@@ -43,7 +43,7 @@ $(document).ready(function(){
                               "<div class='product-info'><li>"+ brand_name +"</li>" +
                               "<li class='product-name'>" + product_name + "</li>" + 
                               "<li>" + name+ ": " + color + "</li>" +
-                              "<li>" + product_price + "</li>" +
+                              "<li class='price'>" + product_price + "</li>" +
                               "<li class='msrp'><s>" + product_msrp + "</s></li></div></div>");
         $('.products-container, h6').fadeIn(3000);
 

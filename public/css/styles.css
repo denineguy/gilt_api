@@ -1,22 +1,28 @@
+nav{
+  text-align: center;
+}
+
 .image-container{
   height: 100%;
   width: 100%;
   margin: 0 auto;
+  border: 1px solid #ddd9d9;
 }
 
 .image-container li img{
-  border: 1px solid blue;
+  /*border: 1px solid #ddd9d9;*/
 }
 
 .products{
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #ddd9d9;
   float: left;
 }
 
 .products ul li{
   list-style: none;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
+  text-align: center;
 }
 
 .products-container{
@@ -26,11 +32,11 @@
 }
 
 li{
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 .product-info{
-  border: 1px solid blue;
+  border: 1px solid #ddd9d9;
 }
 
 .container{
@@ -54,13 +60,18 @@ li{
   font-size: 14px;
 }
 
+.price{
+  margin-top: 20px;
+}
+
 .buy-container{
-  border: 1px solid blue;
+  border: 1px solid white;
   margin-top: -60px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 12px;
   background-color: rgba(255,255,255,0.8);
+  text-align: center;
 /*  display: none;*/
 }
 
@@ -73,6 +84,7 @@ li{
   border-color: #E5B12C;
   color: white;
   box-shadow-color:#E5B12C;
+  position: center;
 }
 
 .button:hover{
@@ -81,10 +93,11 @@ li{
   color: #E5B12C;
 }
 
+
 footer{
   display: block;
   width: 100%;
   float: left;
   text-align: center;
-  border: 1px solid blue;
+  border: 1px solid #ddd9d9;;
 }
