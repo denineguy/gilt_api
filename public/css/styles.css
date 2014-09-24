@@ -1,24 +1,89 @@
 .image-container{
-  height: 300px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .image-container li img{
-  height: 121px;
+  border: 1px solid blue;
 }
+
 .products{
-  width: 30%;
+  width: 100%;
   border: 1px solid black;
   float: left;
 }
 
 .products ul li{
   list-style: none;
+  border: 1px solid blue;
+}
+
+.products-container{
+  /*display: block;*/
+  height: 100%;
+  margin: 0 auto;
 }
 
 li{
   border: 1px solid blue;
 }
 
+.product-info{
+  border: 1px solid blue;
+}
+
+.container{
+  float: left;
+  width: 30%;
+  margin: 10px;
+}
+
 .sale_info{
-  height: 300px;
+  height: 400px;
+  width: 300px; 
+  margin: 0 auto;
+}
+
+.product-name{
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.msrp{
+  font-size: 14px;
+}
+
+.buy-container{
+  border: 1px solid blue;
+  margin-top: -60px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.button{
+  font-size: 18px;
+  /*height: 30px;*/
+  width: 80px;
+  border-radius: 5px;
+  background-color: #E5B12C;
+  border-color: #E5B12C;
+  color: white;
+  box-shadow-color:#E5B12C;
+}
+
+.button:hover{
+  background-color: white;
+  border-color: #E5B12C;
+  color: #E5B12C;
+}
+
+footer{
+  display: block;
+  width: 100%;
+  float: left;
+  text-align: center;
+  border: 1px solid blue;
 }

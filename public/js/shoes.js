@@ -34,16 +34,17 @@ $(document).ready(function(){
         }
 
         for (var key2 in image_object) {
-          var image = image_object[key2].url;
+          var image = image_object[0].url;
         }
         
  
-        $('.products-container').append("<div class='image-container'><li><a href=" + product_url + "'target='_blank'><div class='sale_info' style='background-image:url(\"" + image + "\");background-size:cover'>Hello</div></a></li></div>" +
-                              "<div class='product-info'><h3>" + product_name + "</h3>" + 
-                              "<li>"+ brand_name +"</li>" +
+        $('.products-container').append("<div class='container'><div class='image-container'><li><a href=" + product_url + "'target='_blank'><div class='sale_info' style='background-image:url(" + image + ");background-size:cover'></div></a></li></div>" +
+                              "<div class='buy-container'><button class='button'>Buy</button></div>" +
+                              "<div class='product-info'><li>"+ brand_name +"</li>" +
+                              "<li class='product-name'>" + product_name + "</li>" + 
                               "<li>" + name+ ": " + color + "</li>" +
                               "<li>" + product_price + "</li>" +
-                              "<li><s>" + product_msrp + "</s></li></div>");
+                              "<li class='msrp'><s>" + product_msrp + "</s></li></div></div>");
         $('.products-container, h6').fadeIn(3000);
 
       }
