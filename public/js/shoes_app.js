@@ -47,16 +47,21 @@ $(document).ready(function(){
                               "<li class='msrp'><s>" + product_msrp + "</s></li></div></div>");
         $('.products-container, h6').fadeIn(3000);
 
+        
       }
-  
+      
+      $('.buy-container').hide();
+      
+      $('.container').hover(function(){
+        $(this).find('.buy-container').slideToggle("slow");
+      });
+
     },
     error: function(response){
       console.log("Gilt Failed")
     }
   }); 
 });
-
- // $('#products').append("<li><a href='" + sale_url + "'target='_blank'><div class='sale_info' style='background-image:url(\"" + image + "\"); background-size:cover'><h1>" + sale_name + "</h1></div></a></li>");
 
 // {products":[
 // {"name":"Mixed Media T-Strap Platform Sandal",
