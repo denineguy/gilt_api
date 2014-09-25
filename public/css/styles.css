@@ -1,103 +1,153 @@
-nav{
-  text-align: center;
+body  {
+  background: url(../images/crossword.png);
 }
 
-.image-container{
+nav {
+  text-align: center;
+  width: 100%;
+}
+
+.wrapper-head {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: teal;
+} 
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
+* {
+  box-sizing: border-box;         /* Opera/IE 8+ */ 
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+
+}
+
+/*create wrapper inside nav and make it 1200px*/
+
+/************************************************************************************************/
+/*****************************************  product box ****************************************/
+/************************************************************************************************/
+
+.container {
+  float: left;
+  width: 32.33%; 
+  border: 1px solid blue;
+  /*margin: 0 auto;*/
+  margin: .5%;
+}
+
+
+/************************************************************************************************/
+/*****************************************  image info ****************************************/
+/************************************************************************************************/
+
+
+.image-container {
   height: 100%;
   width: 100%;
   margin: 0 auto;
   border: 1px solid #ddd9d9;
+  background-color: #FFFFFF;
 }
 
-.image-container li img{
-  /*border: 1px solid #ddd9d9;*/
-}
-
-.products{
-  width: 100%;
-  border: 1px solid #ddd9d9;
-  float: left;
-}
-
-.products ul li{
-  list-style: none;
-  /*border: 1px solid blue;*/
-  text-align: center;
-}
-
-.products-container{
-  /*display: block;*/
-  height: 100%;
-  margin: 0 auto;
-}
-
-li{
-  /*border: 1px solid blue;*/
-}
-
-.product-info{
-  border: 1px solid #ddd9d9;
-}
-
-.container{
-  float: left;
-  width: 30%;
-  margin: 10px;
-}
-
-.sale_info{
+.sale_info {
   height: 400px;
   width: 300px; 
   margin: 0 auto;
 }
 
-.product-name{
-  font-weight: bold;
-  font-size: 17px;
-}
+/************************************************************************************************/
+/*****************************************  buy info ****************************************/
+/************************************************************************************************/
 
-.msrp{
-  font-size: 14px;
-}
 
-.price{
-  margin-top: 20px;
-}
-
-.buy-container{
-  border: 1px solid white;
-  margin-top: -60px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  background-color: rgba(255,255,255,0.8);
+.buy-container {
+  border-color: rgba(255,255,255,0.6);
+  width: 100%;
+  margin-top: -70.3px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: rgba(255,255,255,0.6);
   text-align: center;
-/*  display: none;*/
+  float: left;
 }
 
-.button{
+.button {
   font-size: 18px;
   /*height: 30px;*/
   width: 80px;
   border-radius: 5px;
   background-color: #E5B12C;
   border-color: #E5B12C;
-  color: white;
+  color: #FFFFFF;
   box-shadow-color:#E5B12C;
   position: center;
 }
 
-.button:hover{
-  background-color: white;
+.button:hover {
+  background-color: #FFFFFF;
   border-color: #E5B12C;
   color: #E5B12C;
 }
 
 
-footer{
+/************************************************************************************************/
+/*****************************************  product info ****************************************/
+/************************************************************************************************/
+
+.products-container {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.product-info{
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #ddd9d9;
+}
+
+.product-info ul {
+  border: 1px solid #ddd9d9;
+  padding: 15px 0px 20px 0px;
+}
+
+.product-info ul li {
+  list-style: none;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.msrp {
+  font-size: 14px;
+}
+
+.price {
+  padding-top: 20px;
+}
+
+/************************************************************************************************/
+/*****************************************  footer ****************************************/
+/************************************************************************************************/
+footer {
   display: block;
   width: 100%;
-  float: left;
   text-align: center;
-  border: 1px solid #ddd9d9;;
+  border: 1px solid #ddd9d9;
+  overflow: hidden;
 }
+
+/*create wrapper inside footer and make it 1200px*/

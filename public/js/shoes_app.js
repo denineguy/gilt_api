@@ -38,23 +38,31 @@ $(document).ready(function(){
         }
         
  
-        $('.products-container').append("<div class='container'><div class='image-container'><li><a href=" + product_url + "'target='_blank'><div class='sale_info' style='background-image:url(" + image + ");background-size:cover'></div></a></li></div>" +
+        $('.products-container').append("<div class='container'><div class='image-container'><a href=" + product_url + "'target='_blank'><div class='sale_info' style='background-image:url(" + image + ");background-size:cover'></div></a></div>" +
                               "<div class='buy-container'><button class='button'>Buy</button></div>" +
-                              "<div class='product-info'><li>"+ brand_name +"</li>" +
+                              "<div class='product-info'><ul><li>"+ brand_name +"</li>" +
                               "<li class='product-name'>" + product_name + "</li>" + 
                               "<li>" + name+ ": " + color + "</li>" +
                               "<li class='price'>" + product_price + "</li>" +
-                              "<li class='msrp'><s>" + product_msrp + "</s></li></div></div>");
+                              "<li class='msrp'><s>" + product_msrp + "</s></li></ul></div></div>");
         $('.products-container, h6').fadeIn(3000);
 
         
       }
       
       $('.buy-container').hide();
-      
+     
       $('.container').hover(function(){
-        $(this).find('.buy-container').slideToggle("slow");
+        $(this).find('.buy-container').slideToggle(200);
       });
+      // $('.container').hover(
+      //     function () {
+      //         $(this).find('.buy-container').stop().slideUp(100);
+      //     }, 
+      //     function () {
+      //         $(this).find('.buy-container').stop().slideDown(100);
+      //     }
+      // );
 
     },
     error: function(response){
