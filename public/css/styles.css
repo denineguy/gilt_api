@@ -36,7 +36,6 @@ nav {
   float: left;
   width: 32.33%; 
   border: 1px solid blue;
-  /*margin: 0 auto;*/
   margin: .5%;
 }
 
@@ -103,15 +102,16 @@ nav {
   display: block;
   height: 100%;
   margin: 0 auto;
-  background-color: #FFFFFF;
   border: 1px solid black;
   overflow: hidden;
+  background-color: aqua;
 }
 
 .product-info{
   width: 100%;
   margin: 0 auto;
   border: 1px solid #ddd9d9;
+  background-color: #FFFFFF;
 }
 
 .product-info ul {

@@ -38,8 +38,8 @@ $(document).ready(function(){
         }
         
  
-        $('.products-container').append("<div class='container'><div class='image-container'><a href=" + product_url + "'target='_blank'><div class='sale_info' style='background-image:url(" + image + ");background-size:cover'></div></a></div>" +
-                              "<div class='buy-container'><button class='button'>Buy</button></div>" +
+        $('.products-container').append("<div class='container'><div class='image-container'><div class='sale_info' style='background-image:url(" + image + ");background-size:cover'></div></div>" +
+                              "<div class='buy-container'><a href=" + product_url + " target='_blank'><button class='button'>Buy</button></a></div>" +
                               "<div class='product-info'><ul><li>"+ brand_name +"</li>" +
                               "<li class='product-name'>" + product_name + "</li>" + 
                               "<li>" + name+ ": " + color + "</li>" +
